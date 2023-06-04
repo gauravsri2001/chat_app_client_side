@@ -73,6 +73,8 @@ body {
   flex: 3;
   display: flex;
   box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
+  /* width: 200px;
+  height: auto; */
 }
 
 .auth__form-container_image img {
