@@ -39,7 +39,7 @@ const ChannelSearch = () => {
     />
 
     </div>
-    ChannelSearch
+    {/* ChannelSearch */}
     </div>
   )
 }
