@@ -40,7 +40,13 @@ const Auth = () => {
         cookies.set('fullName', fullName);
         cookies.set('userId', userId); 
 
-        //1:33:01
+        if(isSignup) {
+            cookies.set('phoneNumber', phoneNumber);
+            cookies.set('avatarURL', avatarURL);
+            cookies.set('hashedPassword', hashedPassword);
+        }
+
+        window.location.reload();
     }
 
     const switchMode = () =>{
