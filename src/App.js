@@ -8,15 +8,27 @@ import ChannelListContainer from './components/ChannelListContainer';
 import ChannelSearch from './components/ChannelSearch';
 import Auth from './components/Auth';
 
-const apiKey = '4asmmqkuvfcv'
+const cookies = new Cookies();
+
+const apiKey = '4asmmqkuvfcv';
+const authToken = cookies.get('token');
 
 const client = StreamChat.getInstance(apiKey);
 
-const authToken = false;
+if(authToken) {
+  client.connectUser({
+    id: cookies.get('userId'),
+    name: cookies.get('username'),
+    fullName: cookies.get('fullName'), 
+    phoneNumber: cookies.get('phoneNumber'), 
+    image: cookies.get('avatarURL'), 
+    hashedPassword: cookies.get('hashedPassword'),
+  }, authToken)
+}
 
 const App = () => {
   if(!authToken) return <Auth />
-  
+
   return (
     <div className='app__wrapper'>
     <Chat client={client} theme='team light'>
