@@ -6,8 +6,6 @@ import ChannelInner from './ChannelInner';
 import TeamMessage from './TeamMessage';
 
 
-
-
 const ChannelContainer = ({isCreating, setIsCreating, isEditing, setIsEditing, createType}) => {
   const {channel} = useChatContext();
   if(isCreating) {
