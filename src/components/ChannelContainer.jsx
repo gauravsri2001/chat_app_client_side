@@ -10,7 +10,7 @@ const ChannelContainer = ({isCreating, setIsCreating, isEditing, setIsEditing, c
   const {channel} = useChatContext();
   if(isCreating) {
     return(
-      <div className='channek__container'>
+      <div className='channel__container'>
         <CreateChannel createType = {createType} setIsCreating={setIsCreating} />
       </div>
     )
@@ -18,7 +18,7 @@ const ChannelContainer = ({isCreating, setIsCreating, isEditing, setIsEditing, c
 
   if(isEditing){
     return (
-      <div className='channek__container'>
+      <div className='channel__container'>
         <EditChannel setIsEditing = {setIsEditing} />
       </div>
     )

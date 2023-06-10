@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-//import ChannelInfo from '../../src/assets/ChannelInfo';
-//import ChannelInfo from '../assets/ChannelInfo';
 import ChannelInfo from '../assets/ChannelInfo.jsx';
 
 import { MessageList, MessageInput, Thread, Window, useChannelActionContext, Avatar, useChannelStateContext, useChatContext } from 'stream-chat-react';

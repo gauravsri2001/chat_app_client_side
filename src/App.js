@@ -55,7 +55,8 @@ const App = () => {
     </Chat>
       
     </div>
-  )
-}
+  );
+;}
 
 export default App;
+
